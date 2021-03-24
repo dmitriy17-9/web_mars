@@ -1,0 +1,6 @@
+flask
+flask_login
+flask_restful
+sqlalchemy
+sqlalchemy_serializer
+waitress

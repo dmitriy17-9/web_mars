@@ -1,0 +1,43 @@
+h4 {
+   alignment: left;
+   color: darkgray;
+   margin-left: 20px;
+}
+
+h1 {
+   color: #cccccc;
+}
+
+h1.img_test {
+   background: url("/static/img/mars.png") no-repeat;
+   padding-left: 115pt;
+   font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+
+form.form-control {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 450px;
+   background-color: #ffffff;
+   border: 1px solid gray;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+
+form {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 450px;
+   background-color: #ffffff;
+   border: 1px solid gray;
+   border-radius: 5px;
+   padding: 10px;
+}
+form.form-control {
+   max-width: 450px;
+}
+form.form-label {
+   color: darkgray;
+}
