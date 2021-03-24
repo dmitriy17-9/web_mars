@@ -4,3 +4,4 @@ flask_restful
 sqlalchemy
 sqlalchemy_serializer
 waitress
+flask_wtf
