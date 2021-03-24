@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, render_template, redirect, request, make_response, session, abort, jsonify
 from waitress import serve
-from data import db_session, jobs_api, news_resources
+from data import db_session, news_resources
 from data.users import User
 from data.news import News
 from forms.jobs import JobsForm
@@ -248,7 +248,6 @@ def main():
     # add_user(db_sess)
     # add_news(db_sess)
     # add_jobs(db_sess)
-    app.register_blueprint(jobs_api.blueprint)
     port = int(os.environ.get('PORT', 5000))
     # app.run(port=port, host="0.0.0.0")
 
