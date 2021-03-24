@@ -11,7 +11,6 @@ from forms.user import RegisterForm, LoginForm
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from flask_restful import reqparse, abort, Api, Resource
 
-from jobs import Jobs
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
@@ -74,15 +73,6 @@ def add_news(db_sess):
                 is_private=True)
     user.news.append(news)
     db_sess.commit()
-
-
-def add_jobs(db_sess):
-    jobs = Jobs()
-    jobs.team_leader = 2
-    jobs.job = "search for water"
-    jobs.work_size = "20"
-    jobs.collaborators = 5, 7
-    jobs.is_finished = False
 
 
 @app.route("/")
